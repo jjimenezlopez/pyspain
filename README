@@ -1,0 +1,30 @@
+INFO
+-------------------------------------------------------------------------------
+pyspain is a python module that stores the provinces and localities of Spain.
+
+The list of provinces and localities are extracted from INE (Instintuto 
+Nacional de Estadística or National Statistics Institute in English). More
+specifically, the data is taken from:
+
+http://www.ine.es/jaxi/menu.do?type=pcaxis&path=%2Ft20%2Fe260%2Fa2011%2F&file=pcaxis&N=&L=0
+
+The data has been formated to an XML file located in db directory of the 
+module.
+
+In the current version, data is from 2011.
+
+
+
+USAGE
+-------------------------------------------------------------------------------
+To use this module, you can use this example code:
+
+>>> import pyspain
+>>> sp = pyspain.Spain()
+>>> sp.provinces()
+[u'Araba/\xc1lava', u'Albacete', u'Alicante/Alacant', u'Almer\xeda', ... ]
+>>> sp.localities('Granada')
+[u'Agr\xf3n', u'Alamedilla', u'Albolote', u'Albond\xf3n', ... ]
+>>>
+
+
